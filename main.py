@@ -22,7 +22,7 @@ splitter = RecursiveCharacterTextSplitter(
 )
 # HF CLIENT
 
-HF_TOKEN = "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"
+HF_TOKEN = "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"
 hf_client = InferenceClient(token=HF_TOKEN)
 
 
