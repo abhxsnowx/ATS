@@ -22,9 +22,10 @@ splitter = RecursiveCharacterTextSplitter(
 )
 # HF CLIENT
 
-HF_TOKEN = "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"
-hf_client = InferenceClient(token=HF_TOKEN)
+import os
+HF_TOKEN = os.environ.get("HF_TOKEN", "")
 
+hf_client = InferenceClient(token=HF_TOKEN)
 
 # EXPERIENCE CALCULATOR 
 
